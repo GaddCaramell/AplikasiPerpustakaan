@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('Dash',function(){
-    return view('DashBlade');
+    return view('AdminDash.DashBlade');
 });
