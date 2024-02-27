@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('Dash',function(){
-    return view('AdminDash.DashBlade');
-});
+//Interface
+Route::get('Dash',[AdminController::class,'DashAdmin']);
+Route::get('TambahBuku',[AdminController::class,'BukuTambah']);
+Route::get('Histori',[AdminController::class,'hPeminjaman']);
+Route::get('TambahPetugas',[AdminController::class,('dataPetugas')]);
+
+//Interface Tambah Menambah
+Route::get('AddBuku',[AdminController::class,'addBuku']);
+Route::get('AddPetugas',[AdminController::class,'addPetugas']);
+
+//CRUD BUKU
+Route::post('simpanbuku',[AdminController::class,'simpanBuku']);
+Route::get('hapusBuku/{idb}',[AdminController::class,'hapusBuku']);
+Route::get('editBuku/{idb}',[AdminController::class,'editBuku']);
+
+//CRUD Petugas
+Route::post('simpanpetugas',[AdminController::class,('simpanPetugas')]);
+Route::get('hapusPetugas/{idpet}',[AdminController::class,'hapusPetugas']);

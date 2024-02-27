@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('Penulis',255);
             $table->string('Penerbit',255);
             $table->integer('TahunTerbit');
+            $table->integer('Stok');
             $table->timestamps();
             $table->primary('BukuID');
         });

@@ -14,7 +14,7 @@
                     <span class="hide-menu">Home</span>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="#">
+                    <a class="sidebar-link" href="{{ url('Dash') }}">
                         <span>
                             <i class="ti ti-layout-dashboard"></i>
                         </span>
@@ -22,7 +22,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="#">
+                    <a class="sidebar-link" href="{{ url('TambahBuku') }}">
                         <span>
                             <i class="ti ti-book"></i>
                         </span>
@@ -30,19 +30,19 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="#">
+                    <a class="sidebar-link" href="{{ url('TambahPetugas') }}">
                         <span>
-                            <i class="ti ti-book"></i>
+                            <i class="ti ti-server-2"></i>
                         </span>
-                        <span class="hide-menu"></span>
+                        <span class="hide-menu">Petugas</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="#">
+                    <a class="sidebar-link" href="{{ url('Histori') }}">
                         <span>
                             <i class="ti ti-book"></i>
                         </span>
-                        <span class="hide-menu">Buku</span>
+                        <span class="hide-menu">Histori Peminjaman</span>
                     </a>
                 </li>
         </nav>

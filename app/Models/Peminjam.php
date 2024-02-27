@@ -18,4 +18,6 @@ class Peminjam extends Model
     protected $keyType = 'string';
 
     protected $guarded = [''];
+
+    
 }
