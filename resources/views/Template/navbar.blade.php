@@ -38,6 +38,22 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
+                    <a class="sidebar-link" href="{{ url('TambahKategori') }}">
+                        <span>
+                            <i class="ti ti-layout-grid"></i>
+                        </span>
+                        <span class="hide-menu">Kategori</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="{{ url('TambahKategoriRelasi') }}">
+                        <span>
+                            <i class="ti ti-layout-grid"></i>
+                        </span>
+                        <span class="hide-menu">Relasi Kategori</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
                     <a class="sidebar-link" href="{{ url('Histori') }}">
                         <span>
                             <i class="ti ti-book"></i>

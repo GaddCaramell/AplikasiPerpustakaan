@@ -77,7 +77,7 @@
                             <div class="card-body" style="background-color: turquoise">
                                 <div class="row justify-content-start">
                                     <div class="col-6">
-                                        <h4>{{$JumlahBuku}}</h4>
+                                        <h4>{{ $JumlahBuku }}</h4>
                                         <h5>Buku</h5>
                                     </div>
                                     <div class="col-4">
@@ -93,7 +93,7 @@
                             <div class="card-body" style="background-color: lime">
                                 <div class="row justify-content-start">
                                     <div class="col-6">
-                                        <h4>{{$JumlahPengguna}}</h4>
+                                        <h4>{{ $JumlahPengguna }}</h4>
                                         <h5>Member</h5>
                                     </div>
                                     <div class="col-5">
@@ -109,8 +109,8 @@
                             <div class="card-body" style="background-color: lime">
                                 <div class="row justify-content-start">
                                     <div class="col-6">
-                                        <h4>10</h4>
-                                        <h5>Buku Dipinjam</h5>
+                                        <h4>{{ $BukuDipinjam }}</h4>
+                                        <h5>Dipinjam</h5>
                                     </div>
                                     <div class="col-5">
                                         <img src="/assets/images/IconCardDashboard/bookmarklet-svgrepo-com.svg"
@@ -125,8 +125,8 @@
                             <div class="card-body" style="background-color: lime">
                                 <div class="row justify-content-start">
                                     <div class="col-6">
-                                        <h4>20</h4>
-                                        <h5>Buku Dikembali</h5>
+                                        <h4>{{ $Ulasan }}</h4>
+                                        <h5>Ulasan</h5>
                                     </div>
                                     <div class="col-5">
                                         <img src="/assets/images/IconCardDashboard/book-education-reading-school-office-svgrepo-com.svg"

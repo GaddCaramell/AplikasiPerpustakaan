@@ -101,7 +101,7 @@
                                         <td>
                                             <button type="submit" class="btn btn-secondary"><i
                                                     class="bi bi-pencil-square"></i></button>
-                                            <a href="{{ url('hapusBuku/.$bku->BukuID') }}"><button type="submit"
+                                            <a href="{{ url('hapusBuku/' . $bku->BukuID) }}"><button type="submit"
                                                     class="btn btn-danger"><i class="bi bi-trash"></i></button></a>
                                         </td>
                                     </tr>
